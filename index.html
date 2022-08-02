@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../miProyecto-web/javaScript/descuento.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Titular principal de la página</h1>
-     </header>
-     <main>
-        <h2>Primer Subtítulo de la página</h2>
-        <p>Primer párrafo</p>
-     </main>
-     <footer>
-     </footer>
+        <h1>
+            Porcentajes y descuentos
+        </h1>
+        <p>Este es e segundo taller del curso practico de JavaScript</p>
+    </header>
+    <section>
+        <h2>
+            Calcular el precio da pagar de tus productos con descuento
+        </h2>
+        <form>
+            <label for="InputPrecio">Escribe el precio de tu producto</label>
+            <input id="InputPrecio" type="number"/>
+
+            <label for="InputDescuento">Escribe el descuento de tu producto</label>
+            <!-- <inpus id="InputDescuento" type=""/> -->
+            <select id="InputDescuento" >
+                <option value="25">25%</option>
+                <option value="30">30%</option>
+                <option value="50">50%</option>
+            </select>
+            
+            <button type="button" onclick="onClickButtonPriceDiscount()">
+                Calcular el precio con descuento
+            </button>
+            <p id="ResultP"></p>
+        </form>
+    </section>
 </body>
 </html>
