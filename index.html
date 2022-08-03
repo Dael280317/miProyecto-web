@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../miProyecto-web/javaScript/descuento.js"></script>
+    <link rel="stylesheet" href="./css/descuento.css">
+    <script src="./javaScript/descuento.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="body">
     <header>
-        <h1>
+        <h1 style="text-align: center;">
             Porcentajes y descuentos
         </h1>
-        <p>Este es e segundo taller del curso practico de JavaScript</p>
+        <p style="text-align: center;">Este es e segundo taller del curso practico de JavaScript</p>
     </header>
     <section>
-        <h2>
+        <h2 style="text-align: center;">
             Calcular el precio da pagar de tus productos con descuento
         </h2>
-        <form>
+        <form >
+            <div style="text-align: center;">
             <label for="InputPrecio">Escribe el precio de tu producto</label>
             <input id="InputPrecio" type="number"/>
-
+            </div>
+            <br>
+            <div style="text-align: center;">
             <label for="InputDescuento">Escribe el descuento de tu producto</label>
             <!-- <inpus id="InputDescuento" type=""/> -->
+            
             <select id="InputDescuento" >
                 <option value="25">25%</option>
                 <option value="30">30%</option>
                 <option value="50">50%</option>
             </select>
-            
+        
             <button type="button" onclick="onClickButtonPriceDiscount()">
-                Calcular el precio con descuento
+                Calcular
             </button>
-            <p id="ResultP"></p>
+        </div>
+            <p style="text-align: center;" id="ResultP"></p>
         </form>
     </section>
+</div>
 </body>
 </html>
